@@ -1,0 +1,228 @@
+@import "_reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #5582c6;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: white;
+  line-height: normal;
+  background-position: top center;
+}
+
+a {
+  color: #e2e55f;
+  text-decoration: none;
+  text-shadow: 0 0 2px #e2e55f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid #e2e55f;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  width: 90%;
+}
+
+img.characterPic,
+.poster {
+  box-shadow: 0 0 5px #960001;
+  margin-right: 20px;
+  margin-bottom: 1px;
+}
+
+img:hover {
+  box-shadow: 0 0 20px #960001;
+}
+
+h1,
+h2 {
+  font-family: "Cabin", sans-serif;
+  color: #960001;
+}
+
+/* BACKGROUND IMAGE */
+
+.wallpaper {
+  background-image: url("/images/toystory4_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 20em;
+  height: 100vh;
+  z-index: 0;
+  margin-top: -8px;
+  margin-right: -8px;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  z-index: 1;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-width: 1200px;
+  max-width: 1400px;
+}
+
+/* 1st row - Movie Poster & Main Heading (sub-container) */
+
+.flexbox-subcontainer-header {
+  display: flex;
+  margin-left: 50px;
+}
+
+.flexbox-item-poster {
+  margin-top: -250px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: #cbdaed;
+  width: 400px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  margin-left: 50px;
+}
+
+.synopsis {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  margin-left: 50px;
+  width: 90%;
+}
+
+/* 3rd row - CHARACTERS (sub-container) */
+
+.flexbox-subcontainer-characters {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 90%;
+}
+
+.flexbox-item-characters {
+  width: 100%;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.names {
+  color: #960001;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 7px;
+  margin-left: 1px;
+}
+
+img.characterPic {
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+
+/* 4th row - WOODY Quote */
+
+.flexbox-item-quote {
+  background-color: #e2e55f;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  color: #960001;
+  padding: 30px;
+}
+
+/* 5th row - USER'S COMMENTS */
+
+.flexbox-item-comments {
+  margin-left: 55px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+#movieRating {
+  margin-top: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+.rateButton {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  background-color: #79519f;
+}
+
+#rating {
+  font-size: 24px;
+  text-align: center;
+}
+
+p.hidden_page_bottom {
+  visibility: hidden;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+/*  Color palette
+    -----------------------
+    color       HEX code  RGB code
+    -------------------------------------
+    red:      	#960001	  rgb(150,0,1)
+    yellow:     #e2e55f	  rgb(226,229,95)
+    green:      #96c25f	  rgb(150,194,95)
+    blue:       #5582c6	  rgb(85,130,198)
+    purple: 	  #79519f	  rgb(121,81,159) 
+
+    fonts
+    -----------------------
+    headings:   Cabin
+    body:       Roboto
+
+    font-sizes:
+    -----------------------
+    h1:   70px
+    h2:   36px
+    h3    24px
+    body: 17px (all other text)
+
+    breakpoints
+    -----------------------
+    desktop: 1200px
+    
+    max-width of the content is 1400px
+*/
+
+/* Add all of your styles here */
